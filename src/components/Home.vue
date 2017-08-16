@@ -2,12 +2,12 @@
   <main class="wrapper">
     <div class="presentation">
       <div class="presentation--box">
-        <h2 class="presentation--box--title">{{ primaryContent.left.title }}</h2>
-        <p class="presentation--box--text" v-html="primaryContent.left.text"></p>
+        <h2 class="presentation--box__title">{{ primaryContent.left.title }}</h2>
+        <p class="presentation--box__text" v-html="primaryContent.left.text"></p>
       </div>
       <img src=".././assets/images/phone.png" class="presentation--phone">
       <div class="presentation--box">
-        <p class="presentation--box--text" v-html="primaryContent.right.text"></p>
+        <p class="presentation--box__text" v-html="primaryContent.right.text"></p>
       </div>
     </div>
   </main>
@@ -42,6 +42,17 @@ export default {
         margin-right: 10%;
         display: inline-block;
         vertical-align: bottom;
+
+        &__title {
+          font-size: 35px;
+          color: #222626;
+          font-weight: 100;
+        }
+
+        &__text {
+          font-size: 14px;
+          color: #959595;
+        }
       }
 
       &--phone {
