@@ -5,6 +5,7 @@
         <h2 class="presentation--box--title">{{ primaryContent.left.title }}</h2>
         <p class="presentation--box--text" v-html="primaryContent.left.text"></p>
       </div>
+      <img src=".././assets/images/phone.png" class="presentation--phone">
       <div class="presentation--box">
         <p class="presentation--box--text" v-html="primaryContent.right.text"></p>
       </div>
@@ -34,12 +35,21 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
   main {
-    .presentation--box {
-      margin-top: 120px;
-      width: 39%;
-      margin-right: 10%;
-      display: inline-block;
-      vertical-align: bottom;
+    .presentation {
+      &--box {
+        margin-top: 120px;
+        width: 39%;
+        margin-right: 10%;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+
+      &--phone {
+        position: absolute;
+        top: -350px;
+        right: 0;
+        width: 600px;
+      }
     }
   }
 </style>

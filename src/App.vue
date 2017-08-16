@@ -31,6 +31,7 @@ body {
   width: 80%;
   max-width: 1180px;
   margin: 0 auto;
+  position: relative;
 }
 
 #app {
